@@ -14,14 +14,14 @@ class BoostLexical_CastConan(ConanFile):
                       "Boost.Container/1.64.0@bincrafters/testing", \
                       "Boost.Core/1.64.0@bincrafters/testing", \
                       "Boost.Integer/1.64.0@bincrafters/testing", \
+                      "Boost.Math/1.64.0@bincrafters/testing", \
                       "Boost.Mpl/1.64.0@bincrafters/testing", \
                       "Boost.Numeric_Conversion/1.64.0@bincrafters/testing", \
                       "Boost.Range/1.64.0@bincrafters/testing", \
                       "Boost.Static_Assert/1.64.0@bincrafters/testing", \
                       "Boost.Throw_Exception/1.64.0@bincrafters/testing", \
                       "Boost.Type_Traits/1.64.0@bincrafters/testing"
-                      
-                      # "Boost.Math/1.64.0@bincrafters/testing", \ # This is a circular dependency , Needs discussion
+
                       #array3 assert1 config0 container7 core2 integer3 math8 mpl5 numeric~conversion6 range7 static_assert1 throw_exception2 type_traits3
 
     def source(self):
