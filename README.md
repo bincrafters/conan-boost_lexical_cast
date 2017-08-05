@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Lexical_Cast](https://github.com/Boostorg/Lexical_Cast) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Lexical_Cast%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Lexical_Cast%3Abincrafters).
 
 ## For Users: Use this package
 
