@@ -7,7 +7,7 @@ class BoostLexical_CastConan(ConanFile):
     source_url = "https://github.com/boostorg/lexical_cast"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
-    lib_short_name = "lexical_cast"
+    lib_short_names = ["lexical_cast"]
     requires =  "Boost.Array/1.64.0@bincrafters/testing", \
                       "Boost.Assert/1.64.0@bincrafters/testing", \
                       "Boost.Config/1.64.0@bincrafters/testing", \
@@ -25,8 +25,9 @@ class BoostLexical_CastConan(ConanFile):
                       #array3 assert1 config0 container7 core2 integer3 math8 mpl5 numeric~conversion6 range7 static_assert1 throw_exception2 type_traits3
 
     def source(self):
-        self.run("git clone --depth=50 --branch=boost-{0} {1}.git"
-                 .format(self.version, self.source_url))
+        for lib_short_name in self.lib_short_names:
+            self.run("git clone --depth=50 --branch=boost-{0} https://github.com/boostorg/{1}.git"
+                     .format(self.version, lib_short_name)) 
 
     def package(self):
         include_dir = os.path.join(self.build_folder, self.lib_short_name, "include")
