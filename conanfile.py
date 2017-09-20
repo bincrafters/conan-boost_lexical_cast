@@ -1,9 +1,9 @@
-from conans import ConanFile, tools, os
+from conans import ConanFile
+
 
 class BoostLexical_CastConan(ConanFile):
     name = "Boost.Lexical_Cast"
     version = "1.65.1"
-    short_paths = True
     url = "https://github.com/bincrafters/conan-boost-lexical_cast"
     description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
