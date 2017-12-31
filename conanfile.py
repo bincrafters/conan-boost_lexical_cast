@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostLexical_CastConan(ConanFile):
     name = "boost_lexical_cast"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-lexical_cast"
+    url = "https://github.com/bincrafters/conan-boost_lexical_cast"
 
     lib_short_names = ["lexical_cast"]
     is_in_cycle_group = True
