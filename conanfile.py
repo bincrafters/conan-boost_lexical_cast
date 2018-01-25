@@ -8,7 +8,8 @@ class BoostLexical_CastConan(ConanFile):
     name = "boost_lexical_cast"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_lexical_cast"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["lexical_cast"]
     is_in_cycle_group = True
     is_header_only = True
