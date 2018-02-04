@@ -6,7 +6,7 @@ from conans import ConanFile, tools
 
 class BoostLexical_CastConan(ConanFile):
     name = "boost_lexical_cast"
-    version = "1.66.0"
+    version = "1.65.1"
     url = "https://github.com/bincrafters/conan-boost_lexical_cast"
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
@@ -18,8 +18,8 @@ class BoostLexical_CastConan(ConanFile):
         self.info.header_only()
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_level8group/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.65.1@bincrafters/testing",
+        "boost_level8group/1.65.1@bincrafters/testing"
     )
 
     # BEGIN
@@ -27,7 +27,7 @@ class BoostLexical_CastConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "BSL-1.0"
     short_paths = True
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.65.1@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
