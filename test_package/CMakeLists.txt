@@ -17,7 +17,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
   CONAN_PKG::boost_core
   CONAN_PKG::boost_integer
   CONAN_PKG::boost_lexical_cast
-  CONAN_PKG::boost_math
   CONAN_PKG::boost_mpl
   CONAN_PKG::boost_numeric_conversion
   CONAN_PKG::boost_range
