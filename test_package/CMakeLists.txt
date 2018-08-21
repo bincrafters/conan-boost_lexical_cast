@@ -11,20 +11,8 @@ find_package(MPI)
 file(GLOB SOURCE_FILES *.cpp)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
-target_link_libraries(${CMAKE_PROJECT_NAME} 
-  CONAN_PKG::boost_array
-  CONAN_PKG::boost_assert
-  CONAN_PKG::boost_config
-  CONAN_PKG::boost_container
-  CONAN_PKG::boost_core
-  CONAN_PKG::boost_integer
-  CONAN_PKG::boost_lexical_cast
-  CONAN_PKG::boost_mpl
-  CONAN_PKG::boost_numeric_conversion
-  CONAN_PKG::boost_range
-  CONAN_PKG::boost_static_assert
-  CONAN_PKG::boost_throw_exception
-  CONAN_PKG::boost_type_traits)
+target_link_libraries(${CMAKE_PROJECT_NAME}
+  CONAN_PKG::boost_lexical_cast)
 set_property(TARGET ${CMAKE_PROJECT_NAME} PROPERTY CXX_STANDARD 11)
 
 if(MPI_CXX_FOUND)
