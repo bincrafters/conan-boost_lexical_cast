@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.69.0@bincrafters/stable")
 
 class BoostLexical_CastConan(base.BoostBaseConan):
     name = "boost_lexical_cast"
+    version = "1.69.0"
     url = "https://github.com/bincrafters/conan-boost_lexical_cast"
     lib_short_names = ["lexical_cast"]
     header_only_libs = ["lexical_cast"]
